@@ -1,0 +1,7 @@
+integer ::= [1-9][0-9]* | "0"  
+float ::= integer "." "0" | integer "." [0-9]*[1-9]  
+operation ::= "+" | "*" | "~" | "/"  
+value ::= integer | float  
+values ::= value ("," value)*  
+operands ::= "(" values ")"  
+expression ::= operation operands | operation (expression)*
