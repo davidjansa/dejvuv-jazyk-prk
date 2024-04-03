@@ -1,0 +1,43 @@
+1.
+digit = "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" | "0" | "A" | "B" | "C" | "D" | "E" | "F";
+
+number = digit, {digit};
+
+hexadecimal = "0x", number;
+
+2.
+funAlph= "a" | "b" | "c" | "d" | "e" | "f" | "g" | "h" | "i" | "j" | "k" | "l" | "m" | "n" | "o" | "p" | "q" | "r" | "s" | "t" | "u" | "v" | "w" | "x" | "y" | "z" | "_";
+
+parAlph= "a" | "b" | "c" | "d" | "e" | "f" | "g" | "h" | "i" | "j" | "k" | "l" | "m" | "n" | "o" | "p" | "q" | "r" | "s" | "t" | "u" | "v" | "w" | "x" | "y" | "z";
+
+funId= funAlph, {funAlph};
+
+par = funId | parAlph;
+
+expression = funId, "=", "(", par, {",", par}, ")";
+
+3.
+var = "a";
+
+s = e;
+
+e = e1, {"+", e1};
+
+e1 = e2, {"*", e2};
+
+e2 = var | "(", e, ")";
+
+4.
+alph = "a" | "b" | "c" | "d" | "e" | "f" | "g" | "h" | "i" | "j" | "k" | "l" | "m" | "n" | "o" | "p" | "q" | "r" | "s" | "t" | "u" | "v" | "w" | "x" | "y" | "z" | "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" | "0";
+
+var = "a";
+
+id = alph, {alph};
+
+s = id, "=", e;
+
+e = e1, {"+", e1};
+
+e1 = e2, {"*", e2};
+
+e2 = var | "(", e, ")";
