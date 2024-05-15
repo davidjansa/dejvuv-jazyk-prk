@@ -1,5 +1,7 @@
 # dejvuv-jazyk-prk
 
+## Semestrální práce -> adresář /semestralka
+
 **vymyslet jazyk** -> skupinové funkce  
 **2x typy** -> integer, float  
 **2x operace** -> celkový součin, suma  
